@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 16" width="1024" height="32" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="lava" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#d82800"/>
+      <!-- wave crests -->
+      <rect x="2" y="0" width="4" height="1" fill="#fc9838"/>
+      <rect x="0" y="1" width="8" height="1" fill="#fc9838"/>
+      <rect x="0" y="2" width="16" height="2" fill="#fc9838"/>
+      <rect x="10" y="1" width="4" height="1" fill="#fc9838"/>
+      <!-- bubbles & dark spots -->
+      <rect x="4" y="7" width="2" height="2" fill="#fc9838"/>
+      <rect x="11" y="10" width="2" height="1" fill="#881400"/>
+      <rect x="2" y="13" width="3" height="1" fill="#881400"/>
+      <rect x="13" y="5" width="1" height="1" fill="#fcfcfc"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="16" fill="url(#lava)"/>
+</svg>
