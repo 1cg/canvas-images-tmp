@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 46" width="650" height="230" shape-rendering="crispEdges">
+  <defs>
+    <!-- 5x7 pixel glyphs, fill comes from the <use> -->
+    <symbol id="C" overflow="visible"><rect x="1" y="0" width="3" height="1"/><rect x="0" y="1" width="1" height="5"/><rect x="4" y="1" width="1" height="1"/><rect x="4" y="5" width="1" height="1"/><rect x="1" y="6" width="3" height="1"/></symbol>
+    <symbol id="S" overflow="visible"><rect x="1" y="0" width="4" height="1"/><rect x="0" y="1" width="1" height="2"/><rect x="1" y="3" width="3" height="1"/><rect x="4" y="4" width="1" height="2"/><rect x="0" y="6" width="4" height="1"/></symbol>
+    <symbol id="I" overflow="visible"><rect x="0" y="0" width="5" height="1"/><rect x="2" y="1" width="1" height="5"/><rect x="0" y="6" width="5" height="1"/></symbol>
+    <symbol id="d3" overflow="visible"><rect x="0" y="0" width="4" height="1"/><rect x="4" y="1" width="1" height="2"/><rect x="1" y="3" width="3" height="1"/><rect x="4" y="4" width="1" height="2"/><rect x="0" y="6" width="4" height="1"/></symbol>
+    <symbol id="d6" overflow="visible"><rect x="1" y="0" width="3" height="1"/><rect x="0" y="1" width="1" height="5"/><rect x="1" y="3" width="3" height="1"/><rect x="4" y="4" width="1" height="2"/><rect x="1" y="6" width="3" height="1"/></symbol>
+    <symbol id="O" overflow="visible"><rect x="1" y="0" width="3" height="1"/><rect x="0" y="1" width="1" height="5"/><rect x="4" y="1" width="1" height="5"/><rect x="1" y="6" width="3" height="1"/></symbol>
+    <symbol id="M" overflow="visible"><rect x="0" y="0" width="1" height="7"/><rect x="4" y="0" width="1" height="7"/><rect x="1" y="1" width="1" height="1"/><rect x="3" y="1" width="1" height="1"/><rect x="2" y="2" width="1" height="2"/></symbol>
+    <symbol id="P" overflow="visible"><rect x="0" y="0" width="4" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="2"/><rect x="1" y="3" width="3" height="1"/></symbol>
+    <symbol id="U" overflow="visible"><rect x="0" y="0" width="1" height="6"/><rect x="4" y="0" width="1" height="6"/><rect x="1" y="6" width="3" height="1"/></symbol>
+    <symbol id="T" overflow="visible"><rect x="0" y="0" width="5" height="1"/><rect x="2" y="1" width="1" height="6"/></symbol>
+    <symbol id="E" overflow="visible"><rect x="0" y="0" width="5" height="1"/><rect x="0" y="1" width="1" height="5"/><rect x="1" y="3" width="3" height="1"/><rect x="0" y="6" width="5" height="1"/></symbol>
+    <symbol id="R" overflow="visible"><rect x="0" y="0" width="4" height="1"/><rect x="0" y="1" width="1" height="6"/><rect x="4" y="1" width="1" height="2"/><rect x="1" y="3" width="3" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/></symbol>
+    <symbol id="Y" overflow="visible"><rect x="0" y="0" width="1" height="2"/><rect x="4" y="0" width="1" height="2"/><rect x="1" y="2" width="1" height="1"/><rect x="3" y="2" width="1" height="1"/><rect x="2" y="3" width="1" height="4"/></symbol>
+
+    <!-- line 1: CSCI 366, 7 units per glyph -->
+    <g id="l1">
+      <use href="#C" x="0"/><use href="#S" x="7"/><use href="#C" x="14"/><use href="#I" x="21"/>
+      <use href="#d3" x="35"/><use href="#d6" x="42"/><use href="#d6" x="49"/>
+    </g>
+    <!-- line 2: COMPUTER SYSTEMS -->
+    <g id="l2">
+      <use href="#C" x="0"/><use href="#O" x="7"/><use href="#M" x="14"/><use href="#P" x="21"/>
+      <use href="#U" x="28"/><use href="#T" x="35"/><use href="#E" x="42"/><use href="#R" x="49"/>
+      <use href="#S" x="63"/><use href="#Y" x="70"/><use href="#S" x="77"/><use href="#T" x="84"/>
+      <use href="#E" x="91"/><use href="#M" x="98"/><use href="#S" x="105"/>
+    </g>
+    <!-- bold: each line drawn twice, 1 unit apart -->
+    <g id="l1b"><use href="#l1"/><use href="#l1" x="1"/></g>
+    <g id="l2b"><use href="#l2"/><use href="#l2" x="1"/></g>
+  </defs>
+
+  <!-- plaque -->
+  <rect x="0" y="0" width="130" height="46" fill="#000000"/>
+  <rect x="1" y="1" width="128" height="44" fill="#7a2a00"/>
+  <rect x="1" y="1" width="127" height="43" fill="#c84c0c"/>
+  <rect x="1" y="1" width="127" height="1" fill="#fcbcb0"/>
+  <rect x="1" y="1" width="1" height="43" fill="#fcbcb0"/>
+  <!-- rivets -->
+  <rect x="4" y="4" width="2" height="2" fill="#fcbcb0"/>
+  <rect x="124" y="4" width="2" height="2" fill="#fcbcb0"/>
+  <rect x="4" y="40" width="2" height="2" fill="#fcbcb0"/>
+  <rect x="124" y="40" width="2" height="2" fill="#fcbcb0"/>
+
+  <!-- CSCI 366, 2x scale, shadow then face -->
+  <g transform="translate(8 8) scale(2)">
+    <use href="#l1b" x="1" y="1" fill="#000000"/>
+    <use href="#l1b" fill="#ffe0c0"/>
+  </g>
+  <!-- COMPUTER SYSTEMS, 1x scale -->
+  <g transform="translate(8 30)">
+    <use href="#l2b" x="1" y="1" fill="#000000"/>
+    <use href="#l2b" fill="#ffe0c0"/>
+  </g>
+</svg>
